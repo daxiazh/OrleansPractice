@@ -19,9 +19,14 @@ public:
 
 int main(array<System::String ^> ^args)
 {
+	// 开启内存泄漏检测与输出
+    _CrtSetDbgFlag(_CrtSetDbgFlag(_CRTDBG_REPORT_FLAG) | _CRTDBG_LEAK_CHECK_DF);
+
     Console::WriteLine(L"Hello World");
 
-	new int(5);
+    int *pp = (int *)_malloc_dbg(sizeof(int)* 5, _NORMAL_BLOCK, __FILE__, __LINE__);
+    pp[0] = 2;
+
 	std::shared_ptr<CTestCppClr> pPtr(new CTestCppClrEx());
 	const std::string&& name = pPtr->GetName();
 
@@ -31,6 +36,7 @@ int main(array<System::String ^> ^args)
 	int nRet = pPtr->GetLevel();
 
 	Console::ReadKey();
+	    
     return 0;
 }
 

@@ -10,4 +10,9 @@
     - c#写某些对性能要求不高的功能会更快速,且不容易出错
 *  一些对性能要求特别高的功能还可以继续使用 `Native C++` 来实现
 
-> 为了最大化利用物理机器的内存,只实现 `64位` 版本
+> 为了最大化利用物理机器的内存,需要实现 `64位` 版本
+
+### [注意:]()
+如果需要依赖其它的静态库,则要注意:
+* Basically, with mixed mode .NET apps, you need to make sure all statically linked libs are compiled with /EHa instead of the default /EHs.
+否则可能会带来内存的慢慢封增长
