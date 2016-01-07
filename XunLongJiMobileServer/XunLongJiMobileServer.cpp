@@ -24,7 +24,7 @@ int main(array<System::String ^> ^args)
 
     Console::WriteLine(L"Hello World");
 
-    int *pp = (int *)_malloc_dbg(sizeof(int)* 5, _NORMAL_BLOCK, __FILE__, __LINE__);
+    int *pp = new int(5);
     pp[0] = 2;
 
 	std::shared_ptr<CTestCppClr> pPtr(new CTestCppClrEx());
