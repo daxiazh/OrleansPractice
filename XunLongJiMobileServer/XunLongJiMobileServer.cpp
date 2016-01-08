@@ -2,6 +2,7 @@
 
 #include "stdafx.h"
 
+#include "../Common/Include/TestExportClass.h"
 #include "../TestCPPStaticLib/TestCppClr.h"
 #include <memory>
 
@@ -23,6 +24,9 @@ int main(array<System::String ^> ^args)
     _CrtSetDbgFlag(_CrtSetDbgFlag(_CRTDBG_REPORT_FLAG) | _CRTDBG_LEAK_CHECK_DF);
 
     Console::WriteLine(L"Hello World");
+
+	CTestExport _export;
+	int x = _export.Add(1, 2);
 
     int *pp = new int(5);
     pp[0] = 2;

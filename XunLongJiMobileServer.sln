@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XunLongJiGrainInterfaces", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OrleansProjects", "OrleansProjects", "{78A7BA43-CBAE-426D-8D5F-E91AF6D32D8A}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Common", "Common\Common.vcxproj", "{A609DFA0-79F2-469A-83CF-F97DC15DA0B5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,16 @@ Global
 		{3E99499B-0D54-4EEE-A208-30F58316DEF5}.Release|x64.Build.0 = Release|Any CPU
 		{3E99499B-0D54-4EEE-A208-30F58316DEF5}.Release|x86.ActiveCfg = Release|Any CPU
 		{3E99499B-0D54-4EEE-A208-30F58316DEF5}.Release|x86.Build.0 = Release|Any CPU
+		{A609DFA0-79F2-469A-83CF-F97DC15DA0B5}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{A609DFA0-79F2-469A-83CF-F97DC15DA0B5}.Debug|x64.ActiveCfg = Debug|x64
+		{A609DFA0-79F2-469A-83CF-F97DC15DA0B5}.Debug|x64.Build.0 = Debug|x64
+		{A609DFA0-79F2-469A-83CF-F97DC15DA0B5}.Debug|x86.ActiveCfg = Debug|Win32
+		{A609DFA0-79F2-469A-83CF-F97DC15DA0B5}.Debug|x86.Build.0 = Debug|Win32
+		{A609DFA0-79F2-469A-83CF-F97DC15DA0B5}.Release|Any CPU.ActiveCfg = Release|Win32
+		{A609DFA0-79F2-469A-83CF-F97DC15DA0B5}.Release|x64.ActiveCfg = Release|x64
+		{A609DFA0-79F2-469A-83CF-F97DC15DA0B5}.Release|x64.Build.0 = Release|x64
+		{A609DFA0-79F2-469A-83CF-F97DC15DA0B5}.Release|x86.ActiveCfg = Release|Win32
+		{A609DFA0-79F2-469A-83CF-F97DC15DA0B5}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

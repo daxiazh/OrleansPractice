@@ -172,6 +172,9 @@
     <Image Include="app.ico" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Common\Common.vcxproj">
+      <Project>{a609dfa0-79f2-469a-83cf-f97dc15da0b5}</Project>
+    </ProjectReference>
     <ProjectReference Include="..\TestCPPStaticLib\TestCPPStaticLib.vcxproj">
       <Project>{4b1ef249-9863-4110-ba43-e87567932d56}</Project>
       <Private>false</Private>
