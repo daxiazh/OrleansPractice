@@ -156,3 +156,5 @@ $RECYCLE.BIN/
 .DS_Store
 /XunLongJiGrains/Properties/orleans.codegen.cs
 /XunLongJiGrainInterfaces/Properties/orleans.codegen.cs
+/OrleansProjects/XunLongJiGrains/Properties/orleans.codegen.cs
+/OrleansProjects/XunLongJiGrainInterfaces/Properties/orleans.codegen.cs
