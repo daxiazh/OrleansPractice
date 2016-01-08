@@ -29,6 +29,7 @@ namespace CppBridge
         void ILibrary.Setup(Driver driver)
         {
             // 现在先写死的路径,以方便 测试功能是否使,后面真正用到时,再写命令行来更灵活的处理绑定吧
+            // 估计以后要区分 32位与64位
             var options = driver.Options;
             options.GeneratorKind = GeneratorKind.CSharp;
             options.LibraryName = "Common";
