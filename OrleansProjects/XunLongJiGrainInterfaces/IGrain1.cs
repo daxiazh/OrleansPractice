@@ -8,6 +8,6 @@ namespace XunLongJiGrainInterfaces
     /// </summary>
 	public interface IGrain1 : IGrainWithGuidKey
     {
-
+        Task<string> SayHello(string msg);
     }
 }

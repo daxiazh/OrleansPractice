@@ -106,6 +106,9 @@
     <Compile Include="Properties\orleans.codegen.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="OrleansConfiguration.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="OrleansHost.exe.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

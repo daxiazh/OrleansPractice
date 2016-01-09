@@ -23,6 +23,7 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR TH
 
 using System;
 using System.Threading.Tasks;
+using XunLongJiGrainInterfaces;
 
 namespace XunLongJiSiloHost
 {
@@ -38,12 +39,20 @@ namespace XunLongJiSiloHost
 
             Orleans.GrainClient.Initialize("DevTestClientConfiguration.xml");
 
+            var pGrain = Orleans.GrainClient.GrainFactory.GetGrain<IGrain1>(Guid.NewGuid());
+            var retMsg = pGrain.SayHello("You are No1").Result;
+            Console.WriteLine(retMsg);
+            retMsg = pGrain.SayHello("You are No2").Result;
+            Console.WriteLine(retMsg);
+
             // TODO: once the previous call returns, the silo is up and running.
             //       This is the place your custom logic, for example calling client logic
             //       or initializing an HTTP front end for accepting incoming requests.
 
             Console.WriteLine("Orleans Silo is running.\nPress Enter to terminate...");
             Console.ReadLine();
+
+            Orleans.GrainClient.Uninitialize();
         }
 
         static void InitSilo(string[] args)
