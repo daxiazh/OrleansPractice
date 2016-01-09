@@ -31,16 +31,10 @@ namespace XunLongJiSiloHost
     /// </summary>
     public class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            // The Orleans silo environment is initialized in its own app domain in order to more
-            // closely emulate the distributed situation, when the client and the server cannot
-            // pass data via shared memory.
-            AppDomain hostDomain = AppDomain.CreateDomain("OrleansHost", null, new AppDomainSetup
-            {
-                AppDomainInitializer = InitSilo,
-                AppDomainInitializerArguments = args,
-            });
+            Console.WriteLine("Waiting for Orleans Silo to start. Press Enter to proceed...");
+            Console.ReadLine();
 
             Orleans.GrainClient.Initialize("DevTestClientConfiguration.xml");
 
@@ -50,8 +44,6 @@ namespace XunLongJiSiloHost
 
             Console.WriteLine("Orleans Silo is running.\nPress Enter to terminate...");
             Console.ReadLine();
-
-            hostDomain.DoCallBack(ShutdownSilo);
         }
 
         static void InitSilo(string[] args)
