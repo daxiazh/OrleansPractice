@@ -158,3 +158,5 @@ $RECYCLE.BIN/
 /XunLongJiGrainInterfaces/Properties/orleans.codegen.cs
 /OrleansProjects/XunLongJiGrains/Properties/orleans.codegen.cs
 /OrleansProjects/XunLongJiGrainInterfaces/Properties/orleans.codegen.cs
+packages
+/XunLongJiMobileServer.VC.opendb
